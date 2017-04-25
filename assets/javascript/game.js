@@ -1,7 +1,9 @@
 
 var words =["Triceratops", "Tyrannosaurus", "Brontosaurus","Pterodactyl","Mastadon","Sabertooth", "Gastonia", "Rajasaurus", "Stegosaurus", "Confuciusornis", "Fukuisaurus", "Velociraptor", "Iguanodon", "Nodosaurus", "Riojasaurus", "Tarchia", "Tuojiangosaurus", "Eotyrannus", "Brachiosaurus", "Mammoth"]
 var bank = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var under = "";
+var Gbank = ["_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"]
+
+var dashes = "";
 var sBtn = document.getElementById("Start");
 var nBtn = document.getElementById("New");
 var current = document.getElementById("WORD").innerHTML;
@@ -25,24 +27,25 @@ function initialize(){
 }
 
 document.onclick=function Game(){
-document.getElementById("Start").onclick = pickAWord();
+document.getElementById("Start").onclick = pickAWord();underscore();
 document.getElementById("WORD").innerHTML=pickAWord();
-document.getElementById("remain").innerHTML="8";
+document.getElementById("remain").innerHTML= "8";
 document.getElementById("guessed").innerHTML=" None";
 document.getElementById("wins").innerHTML=" 0";
 }
 
 
-function key(){document.onkeyup = function (event) {
+document.onkeyup = function (event) {
   var current = String.fromCharCode(event.keyCode).toLowerCase();
   console.log(current);
-};
 }
 
-//function restart(){
-
-//}
-
-/// function newGame (){
-//	document.getElementById("New").onlick =  
-//};
+function underscore(){
+for (i = 0; i < newWord.length; i++) {
+  if (newWord.charAt(i) == " ") {
+    dashes += " ";
+  } else {
+    dashes += "-";
+  }
+}
+};

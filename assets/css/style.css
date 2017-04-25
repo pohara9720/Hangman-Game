@@ -4,7 +4,7 @@ body {
 .jumbotron {
 	text-align: center;
 	width:100%;
-	background:url(http://bgfons.com/upload/leaves_texture4955.jpg);
+	background:url(http://www.richardslawgroup.com/rlg/wp-content/uploads/2013/02/myspace_background1.jpg);
 	
 	
 
@@ -22,13 +22,14 @@ body {
 nav {
 	text-align: center;
 	font-size: 20px;
-
+background: url(https://www.walldevil.com/wallpapers/a52/2903-textures-background-cool-wallpaper-hdwallpapers-wallpapers.jpg);	
 }
 
 .thumbnail {
 	text-align: center;
 	height:100%;
 	width:100%;
+	background: url(http://www.richardslawgroup.com/rlg/wp-content/uploads/2013/02/myspace_background1.jpg);
 
 }
 
@@ -37,11 +38,18 @@ nav {
 	margin-bottom: 20px;
 }
 	
+#Start {
+	background: url(http://www.richardslawgroup.com/rlg/wp-content/uploads/2013/02/myspace_background1.jpg);
+}
+#New {
+	background: url(http://www.richardslawgroup.com/rlg/wp-content/uploads/2013/02/myspace_background1.jpg);
+}
 
 }
 .footer {
 	margin-top: 10px;
 	font-size: 15px;
+	background: url(http://www.richardslawgroup.com/rlg/wp-content/uploads/2013/02/myspace_background1.jpg);
 
 }
 
