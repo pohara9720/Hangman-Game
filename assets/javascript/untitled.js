@@ -30,7 +30,22 @@ function pickAWord(){
 }
 
 
+function underscore(newWord match){
+	var dashes="";
+for (i = 0; i < newWord.length; i++) {
+  if (match.indexOf(newWord[i])!== -1) {
+dashes += newWord[i];
+  }
+  else {
+  	dashes += "_";
+  }
+}
+};
+
 
 document.onkeyup = function (event) {
   var lGuess.innerHTML = String.fromCharCode(event.keyCode).toLowerCase();
 };
+
+
+_","_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"
