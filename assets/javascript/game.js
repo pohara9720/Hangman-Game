@@ -10,6 +10,7 @@ var guessRemaining= document.getElementById("guessCount");
 var dashes="";
 var answer= document.getElementById("WORD");
 
+
 document.onkeyup = function (event) {
 
   var bank = String.fromCharCode(event.keyCode).toLowerCase();
@@ -18,14 +19,14 @@ document.onkeyup = function (event) {
 
 function pickAWord(){
 	var newWord = words[Math.floor(Math.random()*20)];
-	document.getElementById("WORD").innerHTML= newWord;
+	answer.innerHTML= newWord;
 	wrongLetters.innerHTML= " None" ;
 	winCounter.innerHTML=  0;
 	guessRemaining.innerHTML= 8;
 	for (var i = 0; i < newWord.length; i++) {
-
-		answerArray=newWord.length;
-      	answerArray.push("_");
+		answerArray[i]=newWord.length;
+		answerArray[i] = (" _ ");
+      	
   };
       answer.innerHTML=answerArray;
 	
