@@ -12,6 +12,7 @@ var winCounter= document.getElementById("winCounter");
 var guessRemaining= document.getElementById("guessCount");
 var dashes="";
 var answer= document.getElementById("WORD");
+var remainingLetters = newWord.length;
 ///////////////////////////////KEY CODE///////////////////////////////////////////////////
 
 
@@ -38,11 +39,18 @@ function pickAWord(){
 	console.log(newWord);
     
 };
+
+
+
+
 ///////////////////////////////CLICK FUNCTION///////////////////////////////////////////////////
 
 document.getElementById("Start").onclick = function(){
 	pickAWord(); 
 };
 
+document.getElementById("New").onclick= function(){
+	window.location.reload();
+};
 
 	
